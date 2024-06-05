@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #bungkus {
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            margin: auto;
+            width: 70%;
+            box-shadow: 6px 6px 5px 10px #666666;
+        }
+
+        header {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px rgb(187, 187, 245);
+            padding: 50px;
+            text-align: center;
+            background: #4a448a;
+            color: white;
+        }
+
+        nav {
+            text-align: center;
+            border: 1px dotted;
+            background-color: #e5f50d;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        p {
+            text-indent: 50px;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(66, 31, 5);
+        }
+
+        .dropdown {
+            display: inline-block;
+            color: white;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #888888;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #content {
+            text-align: justify;
+            flex: 7;
+            order: 1;
+            background-color: white;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 3;
+            order: 2;
+            background-color:white;
+            padding: 20px;
+            border: solid;
+            border-radius: 10px 5px 10px 5px;
+        }
+
+        article {
+            width: 100%;
+            border: 4px solid black;
+            padding: 10px;
+            border: 4px solid black;
+            overflow: auto;
+        }
+
+        img {
+            float: left;
+            margin: 10px;
+            background-color: rgb(109, 139, 248);
+            width: 80%;
+            height: 60%;
+            padding: 2px;
+            
+        }
+
+        .imagep {
+            width: 290px;
+            height: 320px;
+            text-align: center;
+            margin: 0px auto;
+            display: block;
+        }
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #00a2c6;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            #bungkus {
+                width: 100%;
+            }
+
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bungkus">
+        <header>
+            <h1>Real Madrid</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#prestasi">Prestasi</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li>
+                    <div class="dropdown">
+                        Menu
+                        <div class="dropdown-content">
+                            <a href="#profile">Profile</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="content">
+                <section>
+                    <article>
+                        <h3 id="sejarah">SEJARAH</h3>
+                        <img src="realmadrid.jpeg" alt="sejarah">
+                        <p>Didirikan pada tahun 1902 sebagai Madrid Football Club, secara tradisional mengenakan kostum kandang putih. 
+                            Kata Real ("dari kerajaan") Spanyol dan dianugerahkan ke klub oleh Raja Alfonso XIII pada tahun 1920 bersama-sama dengan mahkota kerajaan di lambang klub. 
+                            Klub ini telah memainkan pertandingan kandang di Stadion Santiago Bernabéu dengan kapasitas 85.454 di pusat kota Madrid sejak tahun 1947.
+                            Klub ini merupakan salah satu klub sepak bola terkaya di dunia dalam hal pendapatan,
+                            senilai €968,3 juta dan total aset yang senilai €7,2miliar (atau $7,2 miliar) di 2019.[4][5] Ini adalah salah satu dari tiga klub untuk tidak pernah terdegradasi dari papan atas sepak bola Spanyol, 
+                            bersama dengan Athletic Bilbao dan Barcelona club ini juga merupakan club dengan torehan piala UCL terbanyak. Real Madrid memiliki banyak persaingan lama,
+                            terutama El Clásico dengan Barcelona dan El Derbi madrileño dengan Atlético Madrid.</p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section>
+                    <article>
+                        <h3 id="prestasi">PRESTASI</h3>
+                        <img src="PRESTASI.jpg" alt="Prestasi">
+                        <p>Klub ini memantapkan dirinya sebagai kekuatan utama dalam sepak bola Spanyol 
+                            dan Eropa Sejak  tahun 1950an. Di dalam negeri, Klub ini juga merupakan salah 
+                            satu klub terbaik abad ke-20 menurut FIFA. Klub ini menjuarai Liga Champions 
+                            3 musim berturut-turut dibawah kepelatihan Zinedine Zidane dan dengan mesin 
+                            golnya yaitu pemain terbaik dunia Cristiano Ronaldo. Dalam kompetisi domestik, 
+                            klub ini telah meraih 36 gelar La Liga (rekor), 20 gelar Piala Raja Spanyol, 
+                            12 Piala Super Spanyol, 1 Copa Eva Duarte, 1 Copa de la Liga,[6]. Di kompetisi 
+                            tingkat Eropa dan Dunia, klub ini telah meraih 15 gelar Piala Champions Eropa/Liga 
+                            Champions UEFA (rekor), 2 Piala UEFA/Liga Eropa UEFA, 5 Piala Super UEFA, dan 9 kejuaraan 
+                            dunia antar klub (3 Piala Interkontinental , 5 Piala Dunia Antarklub FIFA dan 1 Piala Ibero-American ).
+                          
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section>
+                    <article>
+                        <h3 id="lokasi">LOKASI</h3>
+                        <img src="santiago bernabeu.jpg" alt="lokasi">
+                        <p>Real Madrid, adalah klub sepak bola profesional yang berbasis di kota Madrid, ibu kota negara Spanyol.
+                            Real madrid memiliki Stadion yang bernama Santiago Bernabeu.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>Luas</td>
+                                <td>:</td>
+                                <td> 105x68 meter persegi</td>
+                            </tr>
+                            <tr>
+                                <td>Kapasitas</td>
+                                <td>:</td>
+                                <td>81.000 penonton</td>
+                            </tr>
+                            <tr>
+                                <td>Lokasi</td>
+                                <td>:</td>
+                                <td>Pusat kota Madrid, Spanyol</td>
+                            </tr>
+                           
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <aside>
+                <h3 id="profile">PROFILE DATA PRIBADI</h3>
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <center><img src="gambar1.jpg.jpg" alt="profile" class="imagep"></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>M. Fadilul Ulum</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td>Kerongkong,kec.Suralaga,Kab.Lombok timur</td>
+                    </tr>
+                    <tr>
+                        <td>TTL</td>
+                        <td>:</td>
+                        <td>21 agustus 2003</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td>Mahasiswa dan Belum Kawin</td>
+                    </tr>
+                </table>
+            </aside>
+        </main>
+        <footer>
+            <h2>@Tugas Perancangan Web</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
